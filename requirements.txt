@@ -1,0 +1,6 @@
+flask
+pandas
+plot
+plotly
+yfinance
+matplotlib
