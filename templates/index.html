@@ -1,0 +1,60 @@
+
+<!doctype html>
+<main>
+  <header>
+    <h1>The simple yet powerful 10 year Investment Plan</h1>
+  </header>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.tablesorter.min.js') }}"></script>
+  <div class=page>
+    <p>Everyone wants to get rich. Everyone dreams of getting rich, fast. A few do, but let's be honest - quite a few of us struggle to achieve our goals.</p>
+    <p>We are an impatient lot. We miss to undertsand the potential of investing consistently over a longer period of time. The key word here is 'consistent'. For those who do not have time to track the market and can afford to put aside some moeny every week, they can follow this simple but effective plan. </p>
+    <p>Buy an index etf (my favourite is SPY which tracks the S&P 500 in real-time) or your favourite trustworthy etf available on every major national stock exchange every week for the next 10 years. </p>
+    <p>Though past performance is no guarantee of future results, it can give us an insight into what we could have achieved if we had followed this plan. Below is an illustration showing returns calculated over past 10 years with real market data, if the investor had purchased one etf share every week for the past 10 years until now.</p>
+    <p>Try to see the historical performance yourself - Enter upto 3 ETF ticker names.</p>
+    <form action="{{ url_for('get_returns') }}" method="post">
+      <label for="ticker">Ticker:</label>
+      <input type="text" id="ticker_name" name="ticker_name" placeholder="SPY QQQ IWM" value="{{ ticker_name }}">
+      <button type="submit">Submit</button>
+      <input type="text" id="error_msg" name="error_msg" value="{{ error_message }}" readonly class="error_msg" >
+      <p></p>
+
+      <div class="frame">
+        <img src="{{ chart_file }}" align="middle" />
+      </div>
+  
+      <p>Portfolio value over number of years (click on column header to sort)</p>
+      <div class="dfcontainer">
+        {% for table in table %}
+        {{ table|safe }}
+        {% endfor %}
+      </div>
+    </form>
+
+    <script type="text/javascript">
+      $(document).on('submit','#get-returns',function(e)
+                     {
+        console.log('hello');
+        e.preventDefault();
+        $.ajax({
+          type:'POST',
+          url:'/pandas'
+        })
+      });
+    </script>
+
+    <script>
+      $(document).ready(function()
+        {
+          $("table").tablesorter({
+            sortList: [[0,0]],
+            headers: {3:{sorter:false}}
+          });
+        }
+      );
+    </script>
+
+  </div>
+</main>

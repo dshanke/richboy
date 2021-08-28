@@ -1,0 +1,10 @@
+Assuming you have Windows 10 machine, to use redis we need to install redis for which we will need to enable linux subsystem on your windows machine. Follow these steps to enable Linux subsystem.
+- not necessary, but in case you have critical data on your system back it up
+- Then either restart your machine or close all windows program
+- Open powershell with admin privileges (type powershell in search bar, right click, open as Admin)
+- type following command in powershell and let it run
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+- Once installed let it reboot (it wil update system software) and may reboot more than once.
+
+The steps are also documented here: https://redis.com/blog/redis-on-windows-10/
