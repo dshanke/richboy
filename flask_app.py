@@ -20,7 +20,7 @@ app = Flask(__name__)
 #@app.route('/pandas', methods=("POST", "GET"))
 def get_returns():
     ticker_name = "SPY QQQ IWM"
-    investment_amt_per_week=10000
+    investment_amt_per_week=500
     error_msg = ""
     if request.method == "POST":
         ticker_name = request.form.get("ticker_name")
