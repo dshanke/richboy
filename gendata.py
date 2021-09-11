@@ -70,8 +70,8 @@ def get_investment_returns_data(ticker, investment_amt_per_week):
             currentPrice = round(float(sum(row['Open'])), 2) if mutiticker else round(float(row['Open']), 2)
             cashInHand=cashInHand+InvestmentAmt
             totalUnitsToBuy=int(cashInHand/currentPrice)
-            currentHolding += totalUnitsToBuy
             totalInvestmentThisCycle=totalUnitsToBuy*currentPrice
+            currentHolding += totalUnitsToBuy
             cumulativeCost = round(cumulativeCost + totalInvestmentThisCycle, 2)
             cashInHand=cashInHand-totalInvestmentThisCycle
             currentPortfolioValue = round(currentHolding * currentPrice, 2) + cashInHand
@@ -114,7 +114,7 @@ def get_investment_returns_data(ticker, investment_amt_per_week):
     Profit Percent  : %.2f
     Average Cost    : %.2f
     Current Price   : %.2f
-    Current Holding : %d
+    Current Holding : %d units of each ticker
     Cash In Hand    : %.2f
     """ % (InvestmentAmt, ticker, startDate, endDate, currentPortfolioValue, cumulativeCost, currentPortfolioValue-cumulativeCost, profitPercentage, averageCost, currentPrice, currentHolding,cashInHand)
 
@@ -128,7 +128,7 @@ def get_investment_returns_data(ticker, investment_amt_per_week):
 def main():
     print("Hello World!")
     ticker = 'SPY QQQ'
-    plt, df = get_investment_returns_data(ticker, 10000)
+    plt, df = get_investment_returns_data(ticker, 500)
     # plt.savefig(ticker + ".png")
     plt.show()
 

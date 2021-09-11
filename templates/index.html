@@ -22,7 +22,7 @@
     <form action="{{ url_for('get_returns') }}" method="post">
       <label for="ticker"  ><pre><b>Ticker       :</b></pre></label><input type="text" id="ticker_name" name="ticker_name" placeholder="SPY QQQ IWM" value="{{ ticker_name }}"><br/>
       <label for="wkly_amt"><pre><b>Weekly Amount:</b></pre></label>
-      <input type="number" id="investment_amt_per_week" name="investment_amt_per_week" placeholder="10000" value="{{ investment_amt_per_week }}" min="1000" step="500">
+      <input type="number" id="investment_amt_per_week" name="investment_amt_per_week" placeholder="1000" value="{{ investment_amt_per_week }}" min="500" step="500">
       <button type="submit">Submit</button>
       <input type="text" id="error_msg" name="error_msg" value="{{ error_message }}" readonly class="error_msg" style="color:red;" size="100">
       <p></p>
