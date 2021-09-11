@@ -90,7 +90,7 @@ def get_investment_returns_data(ticker, investment_amt_per_week):
     plt.plot(x, df['CumulativeCost'], label='CumulativeCost')
     plt.plot(x, df['CurrentPortfolioValue'], label='CurrentPortfolioValue')
     plt.ylabel('Portfolio Value $$$')
-    plt.ylabel('Investment Dates')
+    plt.xlabel('Investment Dates')
     y_min, y_max = plt.ylim()
     plt.ticklabel_format(axis='y', style='', useOffset=False)
 
