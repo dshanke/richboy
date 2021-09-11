@@ -74,7 +74,7 @@ def get_investment_returns_data(ticker, investment_amt_per_week):
             totalInvestmentThisCycle=totalUnitsToBuy*currentPrice
             cumulativeCost = round(cumulativeCost + totalInvestmentThisCycle, 2)
             cashInHand=cashInHand-totalInvestmentThisCycle
-            currentPortfolioValue = round(currentHolding * currentPrice, 2)
+            currentPortfolioValue = round(currentHolding * currentPrice, 2) + cashInHand
             averageCost = round(cumulativeCost/currentHolding, 2)
             mytuple = (strDate, currentHolding, currentPrice, averageCost, cumulativeCost, currentPortfolioValue, currentPortfolioValue-cumulativeCost,cashInHand)
             portfolioData.append(mytuple)
@@ -108,15 +108,15 @@ def get_investment_returns_data(ticker, investment_amt_per_week):
     If you invested $%d 
     To buy [%s] every week from %s to %s
     Your portfolio value would be as follows:
-    Total Investment: $%.2f
     Portfolio Value : $%.2f
+    Total Investment: $%.2f
     Profit / Loss   : $%.2f
     Profit Percent  : %.2f
     Average Cost    : %.2f
     Current Price   : %.2f
     Current Holding : %d
     Cash In Hand    : %.2f
-    """ % (InvestmentAmt, ticker, startDate, endDate, cumulativeCost, currentPortfolioValue, currentPortfolioValue-cumulativeCost, profitPercentage, averageCost, currentPrice, currentHolding,cashInHand)
+    """ % (InvestmentAmt, ticker, startDate, endDate, currentPortfolioValue, cumulativeCost, currentPortfolioValue-cumulativeCost, profitPercentage, averageCost, currentPrice, currentHolding,cashInHand)
 
     plt.text(0, 0.5 * y_max, summary, size=10)
     if os.name == 'nt':
