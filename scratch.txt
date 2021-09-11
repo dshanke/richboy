@@ -8,3 +8,119 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 - Once installed let it reboot (it wil update system software) and may reboot more than once.
 
 The steps are also documented here: https://redis.com/blog/redis-on-windows-10/
+
+
+
+[https://www.facebook.com/groups/1930565613719977/permalink/3974139316029253]
+Sell one $SPX put per day, -.06 —.07delta, 45 days out. 
+(Of course this can be done with SPY on smaller accounts)
+Exit (purchase back) at 50% profit. This earns approximately $600-$700 per day x 22 trading days per month = $13,200-$15,400 profit. 
+Losses:
+If market drops & premium  you had received triples,
+ie: $14.00 put becomes $42.00 during a falling market, then exit at this price ($28.00) loss. 
+Doomsday Scenario/Black Swan:
+Purchase $VIX calls, once per month, at .10 to .15 delta. 
+1% of portfolio total (1,000 per $100k account) should go into this.  0.25% 120 days out, each & every month. 
+(During the March 2020 crash, this covered all losses plus gave profit). You will have 30,60,90,120 dte calls. 
+This is protection against:
+Black Monday, doomsday, Covid (2020) & Black Swan events. 
+So far YTD:
+Two losses in January, One loss in May.
+Profit in 2021 YTD: $105,000. (1 put sold)
+
+
+(I believe he said days in trade is about 11. So with about 22 trading days in a month, he can cycle capital twice. Number of contracts/trades to deploy obviously depend on one's account size and risk tolerance (it's undefined risks trades).)
+
+[Strategy]
+ Q: How about using a spread to reduce the capital requirements ?
+ A: Adam - This strategy is a put selling strategy.
+ 
+ [Alternative]:
+ this is a great thread and great idea! I'm going to start on Monday but I would like some input on the following. I can't sell every day and do not prefer to have as many open positions. To get my feet wet I was planning on selling 5 SPY on Monday and then 5 SPY on Thursday for a couple of months. Eventually ramp it up to sell 20 SPY on Monday and 20 SPY on Thursday. This way I have two trades per week at the equivalent of 4 SPX on a weekly basis.
+ Initially just stick with the plan to sell at 6 to 7 delta at 45 DTE and sell at 50% profit or sell at 3x premium received (for a loss).
+ When ramped up to 20 on Mon and 20 on Thu, sell 1/2 at 50% profit and the other half at 75% profit. Same stop-loss of 3x premium received.
+ Thoughts and opinions welcome!
+
+
+[BuyingPower/Margin]
+ Q: How big of an account with portfolio margin to safely run this
+ A: Adam - Probably 300k for SPX. 30k for SPY...depending on your broker. (SPY == XSP --less liquidity)
+ A: You can do this with /ES with <$4K buying power per trade.
+
+ A: Adam - For me it’s 20k in buying power held. Since I’m selling 2 per day, and average time in trade is 11 days, that’s approximately $1300 per day on the 40k held. Equal to 6% per month. 72% per year.
+ (IB needs ~40K)
+
+ Q: How much do you hold in cash vs BP used to sustain this strategy
+ A: Adam - ranges from 20-60%
+
+ A: A 3800 strike put (~5 delta at this time) will cost you about $38k in margin.
+    So assuming you have enough for 15 or so days x $30-40k each in margin this works. 
+    It's roughly $500k in total. Edit, I have a regular margin account with TOS. Not portfolio margin.
+
+ Q: Selling just one put requires $383000.00 in margin for SPX. Nneed $8 million in your account and that's just for the opening margin. If the market moves against you that number could easily swell to $24 million.
+ A: Portfolio margin only requires 9% BPR. The stops would kick in long before and margin expansion occurs. 
+    See ‎The Trade Busters: 14 - Trade Sizing and Buying Power Management
+    Also https://podcasts.apple.com/us/podcast/the-derivative/id1497570451?i=1000512580326&fbclid=IwAR204nXMHJ70WvAzP8rFFdO5HKcLRQPbPGC9srfltawvZn-0xREcGpDtVaA
+
+ Q: The amount of capital for this strategy as you do it .. I do have a good margin account.
+ A: SPY: BP of 4.5K
+    SPX: BP of 38.0K For a 7 Delta 44DTE
+
+[Returns]
+ Q: Why does your p&l vastly outperform David Sun’s 45DTE strategy?
+ A: DavidSun - I trade 3-4 SPY contracts each day. Adam Narbonne trades 2 SPX a day. He’s literally trading 5-6 times larger than I am
+
+VIX Hedge (CBOE Market Volatality):
+* Calls are ~ 45-55 Vix [Losing them all wouldnt be that bad. If you’re trying to make 20% annual return, assuming a 35% capture rate, you’d only be selling 0.22% worth of premium for each entry. If you lost a 10 position book that would only be 4.5% drawdown to your account. Even losing a 17 position book (high unlikely) is only a 7.6% drawdown.]
+If you pay 0.25% of total portfolio 120DTE, once per month. 
+Does that means that you are using 3% (0.25% x 12 mths) in total annually and protected by 1% of your total portfolio at any time?
+ Q: Does your total portfolio size only mean the SPX trades net liq or the total of your stocks and options portfolio net liq? Only SPX/SPY
+ A: Adam: Let’s say your account size is 500 K, you would spend 5000 divided by four, which is 1250 per month
+ Q: Does your definition of account size refer to the total buying power blocked for all the SPX trades we have?
+ A: Yes Sir. Exactly.
+
+ A: Adam - 1% of my account is divided by 4. Each month I spend .3% on Vix calls. 120 dte. Usually at monthly expiration time.
+You will eventually have 120,90,60,30 dte calls.
+Yes, I let them expire unless there is a crash large enough to increase the Vix to 40. I may then sell some.
+Keep in mind that there are 2 hedges at play here. 3x exit, AND the Vix calls.
+
+Sell VIX?
+No, I would not sell the ViX calls, unless the ViX reaches 40+, or market crashes. If 3x stop is triggered, strategy says just exit, & sell another as normal for the day
+
+Timing:
+ Don’t really have to worry about time of entry.
+MarketDrop:
+On Market Drop And You get Stopped on a bunch of positions
+I would exit at 3x, and try to make up some ground if the Vix hits 40 or higher.
+Vix calls are only sold in the event of a crash. Above 40 vix
+
+Adam - So if I exit at 3x/4x (which was what happened during Covid) I would probably exit some positions when theVix hits 40 and then more at 50 or 60.
+
+
+
+[Risks]
+Q: We are in a strong bull market right now. It works well when the black swans are hibernating. Would be interesting to see how it would work in tougher years
+A: Adam - It actually holds up rather well in bear markets.
+
+Q: So if all 22 trades in the month goes against you it could wipe out $79k. I assume the VIX hedge would cover this in a black swan, Covid case. But what if there wasn’t a black swan? Maybe not all 22 will lose.
+A: David - Average book size is 10 and max book size is 17. You’re almost never gonna lose 17 at once.
+
+
+[Misc]:
+I do a similar strategy but with /ES and i sell +10% ITM beginning of year.
+Hedge is with sell aggressive ES calls and VIX wide call spread and Risk Twist Spreas
+* seasonally these next two months are weak so I would prefer to do it when the market's hotter during that November to April time frame. markets are up 2/3 of the time. It just might take longer to close out puts in the slower times of the year.
+
+[ES]MES 1 point => $5
+[NQ]MNQ 1 point => $2
+
+[MES/MNQ/M2K/MYM - Sunday 5 PM CT - Friday 4 PM CT (Trading Halt from 3:15 PM to 3:30 PM Monday-Friday)] 
+*note: check listing cycle & expiration schedule on cmegroup.com
+I certainly wouldn't do it; but I also don't have that much BP available. I personally use the David Sun 45DTE strategy; but use /ES options instead.
+However, it would love to have the ability to set a stop loss at 3x credit received, which you can't do with /ES. I also like /ES since I really can't look at the market during the day, but instead can put on all of my trades at night.
+
+Can this strategy work using the same mechanics but on /es futures and with a spread rather than naked (say 50 points wide) to reduce BP? IBKR seems to allow me to apply a GTC stop to futures orders so that would be ok. But my concern is whether using a spread rather than naked would affect the way the trade works, or whether it wouldn't make much difference?
+Adam - Spreads behave kind of weird so I don’t know. If you are trading on /ES there’s reallt no need for a spread. The capital efficiency is already very high so that would just be leverage on top of leverage.
+Very true - but the reason I ask is because the premium for selling say 8 contracts of a 50-wide put spread at delta 6 in /ES would be about $850 and require about $5K in BP. The naked put by contrast would require $12.5K in BP and only bring in $540 in credit.
+
+
