@@ -13,7 +13,7 @@ valid_tickers = [ "UVXY", "VXX", "ARKG", "ITB", "IEFA", "INDA", "VIXY", "RSX", "
 def is_valid_ticker(t):
     return t in valid_tickers
 
-duration=10 #years
+duration=30 #years
 
 def check_valid_tickers(ticker):
     tickers = ticker.split()
